@@ -1,0 +1,28 @@
+table 'Data 1'
+	lineageTag: aa50f413-e492-419f-9dea-3728685e22d6
+
+	column Column1
+		dataType: string
+		lineageTag: 5c4716ea-a4eb-46fb-8974-3d231fb5b886
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 3e250048-afb9-4ed5-9e67-e143e3d6a8b1
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Data 1' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\RBRTEd.xls"), null, true),
+				  #"Navigation 1" = Source{[Name = "Data 1"]}[Data]
+				in
+				  #"Navigation 1"
+

@@ -1,0 +1,41 @@
+table Sheet1
+	lineageTag: f6d98fb1-dd03-4dba-b77e-f54ca95f09d7
+
+	column Date
+		dataType: string
+		lineageTag: 6de2f4a4-4aa8-4b1c-998b-c341fce79e03
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column USD_quant
+		dataType: int64
+		formatString: 0
+		lineageTag: 0acdc8a7-29ef-4fdb-975b-027c8d650a7c
+		summarizeBy: sum
+		sourceColumn: USD_quant
+
+		annotation SummarizationSetBy = Automatic
+
+	column USD
+		dataType: double
+		lineageTag: 993b80b5-ee0f-4165-948f-c3b83a3c6219
+		summarizeBy: sum
+		sourceColumn: USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Официальные (рыночные) курсы валют.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Date", type text}, {"USD_quant", Int64.Type}, {"USD", type number}})
+				in
+				  #"Changed column type"
+

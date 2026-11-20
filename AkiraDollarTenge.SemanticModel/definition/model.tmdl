@@ -1,0 +1,45 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["Methodological notes","Conventional designations","CPI","Code of the Statistical Indicator (Methodological notes)","Price index for consumer goods and services (CPI)","CleanedMonthlyDataset","Sheet1","Contents","Data 1","Methodological notes (2)","Conventional designations (2)","CPI (2)","Code of the Statistical Indicator (Methodological notes) (2)","Price index for consumer goods and services (CPI) (2)","eng","_xlnm Print_Area","Index of prices and tariffs for consumer goods and services (eng)","AkiraDollarTenge","results"]
+
+ref table 'Methodological notes'
+ref table 'Conventional designations'
+ref table CPI
+ref table 'Code of the Statistical Indicator (Methodological notes)'
+ref table 'Price index for consumer goods and services (CPI)'
+ref table CleanedMonthlyDataset
+ref table DateTableTemplate_9ea1efc3-9b4d-4c21-a7e4-7ca8fcd5c88a
+ref table LocalDateTable_69de9811-b14f-47b4-9010-e238f94f9fa3
+ref table Sheet1
+ref table Contents
+ref table 'Data 1'
+ref table 'Methodological notes (2)'
+ref table 'Conventional designations (2)'
+ref table 'CPI (2)'
+ref table 'Code of the Statistical Indicator (Methodological notes) (2)'
+ref table 'Price index for consumer goods and services (CPI) (2)'
+ref table eng
+ref table '_xlnm Print_Area'
+ref table 'Index of prices and tariffs for consumer goods and services (eng)'
+ref table AkiraDollarTenge
+ref table LocalDateTable_8e39528d-30dd-4688-9ce4-787b79726ec4
+ref table LocalDateTable_14ee631c-8ac2-449d-8943-406ff4a430e9
+ref table LocalDateTable_812fb373-816d-4790-98e7-d0bca8a8069f
+ref table results
+ref table LocalDateTable_884f1492-ccb3-4ff5-8f77-62d54a11d60e
+ref table LocalDateTable_950fbaaf-3018-4a04-b9ad-4f80d6776dd6
+ref table LocalDateTable_585bf3fa-d28a-4975-95a1-640a2233ea80
+
+ref cultureInfo en-US
+

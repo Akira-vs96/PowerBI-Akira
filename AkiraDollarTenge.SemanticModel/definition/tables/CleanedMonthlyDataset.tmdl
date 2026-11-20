@@ -1,0 +1,226 @@
+table CleanedMonthlyDataset
+	lineageTag: 1aaf3365-2616-404c-a913-5caa2e69e3d3
+
+	measure 'Средний курс' = AVERAGE('CleanedMonthlyDataset'[usd_kzt])
+		formatString: 0.00
+		lineageTag: b35f69a4-4a39-4ad4-b5a3-a0be3647f366
+
+	measure 'Максимальный курс' = MAX('CleanedMonthlyDataset'[usd_kzt])
+		formatString: 0.00
+		lineageTag: 464fce36-31d7-4738-a46b-7f4f9ccab96a
+
+	measure 'Минимальный курс' = MIN('CleanedMonthlyDataset'[usd_kzt])
+		formatString: 0.00
+		lineageTag: 4af8c1b9-120a-4e9a-8f61-57729c1980f5
+
+	measure 'Средняя цена Brent' = AVERAGE('CleanedMonthlyDataset'[brent_usd])
+		formatString: 0.00
+		lineageTag: c2b5196d-ac92-4297-a424-2b83f70f8ccf
+
+	measure 'Средняя волатильность' = AVERAGE('CleanedMonthlyDataset'[volatility_12m])
+		formatString: 0.00
+		lineageTag: 9f99d0de-9928-4a3c-b2bd-ee2d02c7db7a
+
+	measure 'Количество девальваций' = SUM('CleanedMonthlyDataset'[devaluation_event])
+		formatString: 0
+		lineageTag: cbdafb25-9786-4350-8857-57901d894cf5
+
+	measure 'Доля месяцев высокого риска' = DIVIDE(SUM('CleanedMonthlyDataset'[risk_high]), COUNTROWS('CleanedMonthlyDataset'))
+		formatString: 0.0%
+		lineageTag: 155d43ec-e123-4011-a609-e0c4991f7bb8
+
+	column date
+		dataType: int64
+		formatString: 0
+		lineageTag: 276cf89d-0d7c-46a1-989b-e4a5b58f8e1c
+		summarizeBy: sum
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column usd_kzt
+		dataType: double
+		lineageTag: 3522ab04-1c28-4caa-ba2c-768de4465a70
+		summarizeBy: sum
+		sourceColumn: usd_kzt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column brent_usd
+		dataType: double
+		lineageTag: 2be64a75-3c9b-4b07-9ceb-ecdeab4f49f7
+		summarizeBy: sum
+		sourceColumn: brent_usd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: ffbfe99e-75ee-4564-af42-cbc440d7ea2a
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column cpi_total
+		dataType: double
+		lineageTag: 6f67914d-c0ef-463d-b841-7fc61972fb0f
+		summarizeBy: sum
+		sourceColumn: cpi_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cpi_goods_services
+		dataType: double
+		lineageTag: 72ed41a8-5d1e-4500-9608-5389c36ee561
+		summarizeBy: sum
+		sourceColumn: cpi_goods_services
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cpi_food
+		dataType: double
+		lineageTag: 13d902ba-1ca5-44ab-9f60-b8162e9c8924
+		summarizeBy: sum
+		sourceColumn: cpi_food
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cpi_nonfood
+		dataType: double
+		lineageTag: e811c305-267b-4c77-83b4-d4ed483e9ec6
+		summarizeBy: sum
+		sourceColumn: cpi_nonfood
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cpi_services
+		dataType: double
+		lineageTag: 28ffc1d9-1ed9-4241-af97-4128bc3d7092
+		summarizeBy: sum
+		sourceColumn: cpi_services
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column usd_kzt_mom_pct
+		dataType: double
+		lineageTag: eb2ba5b2-140c-4631-a18c-2193888645ab
+		summarizeBy: sum
+		sourceColumn: usd_kzt_mom_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column usd_kzt_yoy_pct
+		dataType: double
+		lineageTag: eaa60e5d-270b-42ce-91ad-f3ab58d1242c
+		summarizeBy: sum
+		sourceColumn: usd_kzt_yoy_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column volatility_12m
+		dataType: double
+		lineageTag: 82d9ead4-fce8-4f81-9a08-9fe38d6b861e
+		summarizeBy: sum
+		sourceColumn: volatility_12m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column brent_lag1
+		dataType: double
+		lineageTag: 0d8fc729-1f57-4dfd-87fc-7589f095157b
+		summarizeBy: sum
+		sourceColumn: brent_lag1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column brent_lag3
+		dataType: double
+		lineageTag: c8ba770a-4831-4295-b958-1e62906a7d01
+		summarizeBy: sum
+		sourceColumn: brent_lag3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cpi_total_lag1
+		dataType: double
+		lineageTag: 7cc8687d-41d7-412d-b9fd-0f82b208fb2b
+		summarizeBy: sum
+		sourceColumn: cpi_total_lag1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column devaluation_event
+		dataType: int64
+		formatString: 0
+		lineageTag: eea9382f-4db1-48c4-8fed-4db1739ffc8d
+		summarizeBy: sum
+		sourceColumn: devaluation_event
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_high
+		dataType: int64
+		formatString: 0
+		lineageTag: cf4576a7-0530-46d0-a3b3-636b312525b6
+		summarizeBy: sum
+		sourceColumn: risk_high
+
+		annotation SummarizationSetBy = Automatic
+
+	column period
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d2becd1f-1c52-47c2-8907-749512380599
+		summarizeBy: none
+		sourceColumn: period
+
+		variation Variation
+			isDefault
+			relationship: cdece580-f899-48f5-bff6-cfc07cc3f990
+			defaultHierarchy: LocalDateTable_69de9811-b14f-47b4-9010-e238f94f9fa3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition CleanedMonthlyDataset = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\data\cleaned_monthly_dataset.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"date", Int64.Type}, {"usd_kzt", type number}, {"brent_usd", type number}, {"year", Int64.Type}, {"cpi_total", type number}, {"cpi_goods_services", type number}, {"cpi_food", type number}, {"cpi_nonfood", type number}, {"cpi_services", type number}, {"usd_kzt_mom_pct", type number}, {"usd_kzt_yoy_pct", type number}, {"volatility_12m", type number}, {"brent_lag1", type number}, {"brent_lag3", type number}, {"cpi_total_lag1", type number}, {"devaluation_event", Int64.Type}, {"risk_high", Int64.Type}, {"period", type date}})
+				in
+				  #"Changed column type"
+
+	changedProperty = Name
+

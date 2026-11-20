@@ -1,0 +1,37 @@
+table 'Conventional designations'
+	lineageTag: ad722c0e-0809-4cb9-a89f-18b5d4d28827
+
+	column Column1
+		dataType: string
+		lineageTag: 94fd17d2-6ccf-4a33-bce6-f95fbf902e64
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: acd26d7d-4419-49be-bb10-36ad7ca007ba
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 2903a90b-dc59-4b95-8f93-505b7eef8a3f
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Conventional designations' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Index_of_prices_and_tariffs_for_consumer_goods_and_services_by_region.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Conventional designations ", Kind = "Sheet"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"Column1", type text}, {"Column2", type text}})
+				in
+				  #"Changed column type"
+

@@ -1,0 +1,51 @@
+relationship AutoDetected_e02417fa-9032-4678-8f35-eb27721c6083
+	fromColumn: 'Methodological notes'.Column1
+	toColumn: 'Code of the Statistical Indicator (Methodological notes)'.Column1
+
+relationship cdece580-f899-48f5-bff6-cfc07cc3f990
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CleanedMonthlyDataset.period
+	toColumn: LocalDateTable_69de9811-b14f-47b4-9010-e238f94f9fa3.Date
+
+relationship AutoDetected_6aa5cdd6-20cb-4dc6-877c-813f76c8344b
+	fromColumn: 'Methodological notes (2)'.Column1
+	toColumn: 'Code of the Statistical Indicator (Methodological notes)'.Column1
+
+relationship AutoDetected_45af6f49-5764-4dcd-80d4-68f8814849a1
+	fromColumn: 'Methodological notes'.Column1
+	toColumn: 'Code of the Statistical Indicator (Methodological notes) (2)'.Column1
+
+relationship AutoDetected_b1921898-950c-4419-90ee-953767573394
+	fromColumn: 'Methodological notes (2)'.Column1
+	toColumn: 'Code of the Statistical Indicator (Methodological notes) (2)'.Column1
+
+relationship 41661183-3d60-46ee-96bf-ff998f86f77d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AkiraDollarTenge.'Date accessed'
+	toColumn: LocalDateTable_8e39528d-30dd-4688-9ce4-787b79726ec4.Date
+
+relationship eb031c66-7d58-41de-bf64-99bc94ec24db
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AkiraDollarTenge.'Date modified'
+	toColumn: LocalDateTable_14ee631c-8ac2-449d-8943-406ff4a430e9.Date
+
+relationship ee7b4c2a-e478-4b3d-9f80-b92a3c772462
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AkiraDollarTenge.'Date created'
+	toColumn: LocalDateTable_812fb373-816d-4790-98e7-d0bca8a8069f.Date
+
+relationship f78ee847-6e7d-448e-b5d6-c0cfc81adbc9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: results.'Date accessed'
+	toColumn: LocalDateTable_884f1492-ccb3-4ff5-8f77-62d54a11d60e.Date
+
+relationship 1cf61395-9d48-498a-a51f-4b9063623cc1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: results.'Date modified'
+	toColumn: LocalDateTable_950fbaaf-3018-4a04-b9ad-4f80d6776dd6.Date
+
+relationship 3088342b-2e8f-4241-904c-b82554f498ba
+	joinOnDateBehavior: datePartOnly
+	fromColumn: results.'Date created'
+	toColumn: LocalDateTable_585bf3fa-d28a-4975-95a1-640a2233ea80.Date
+
