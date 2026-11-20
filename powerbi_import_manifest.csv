@@ -1,0 +1,22 @@
+table_name,file_path,purpose
+CleanedMonthlyDataset,data/cleaned_monthly_dataset.csv,Основная временная таблица курса Brent CPI и признаков риска
+OfficialCurrentUsdKzt,data/official_current_usd_kzt.csv,Свежий официальный рыночный курс НБРК
+RegressionMetrics,results/method_01_regression_metrics.csv,Метрики регрессии
+RegressionCoefficients,results/method_01_regression_coefficients.csv,Коэффициенты регрессии
+RegressionPredictions,results/method_01_regression_predictions.csv,Фактические и прогнозные значения регрессии
+ClusteringPeriods,results/method_02_clustering_periods.csv,Кластеры исторических периодов
+ClusteringMetrics,results/method_02_clustering_metrics.csv,Silhouette Score
+ClusteringComparison,results/method_02_clustering_comparison.csv,"Сравнение Silhouette Score для k=2,3,4,5"
+ClassificationMetrics,results/method_03_classification_metrics.csv,Метрики классификации риска
+ClassificationConfusionMatrix,results/method_03_classification_confusion_matrix.csv,Матрица ошибок
+AssociationRules,results/method_04_association_rules.csv,Ассоциативные правила
+TimeSeriesForecast,results/method_05_time_series_forecast.csv,Прогноз курса на 12 месяцев
+TimeSeriesBacktest,results/method_05_time_series_backtest.csv,Backtesting прогноза на 6 и 12 месяцев
+PCALoadings,results/method_06_pca_loadings.csv,Нагрузки PCA
+PCAVariance,results/method_06_pca_variance.csv,Объясненная дисперсия PCA
+PCAScores,results/method_06_pca_scores.csv,Координаты наблюдений в PCA
+AnomalyDetection,results/method_07_anomaly_detection.csv,Сравнение аномалий
+AnomalyMetrics,results/method_07_anomaly_metrics.csv,Количество аномалий по методам
+NeuralNetworkMetrics,results/method_08_neural_network_metrics.csv,Метрики MLP
+NaiveBayesMetrics,results/method_09_naive_bayes_metrics.csv,Метрики Naive Bayes
+KNNMetrics,results/method_10_knn_metrics.csv,Сравнение k=3 5 7

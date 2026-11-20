@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AkiraDollarTenge"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "29bee9b7-4eac-4c9d-807d-38892e0b136a"
+  }
+}

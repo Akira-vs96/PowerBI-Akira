@@ -1,0 +1,31 @@
+table 'Code of the Statistical Indicator (Methodological notes)'
+	lineageTag: bf09ebe8-d375-4552-8d01-464649f0219d
+
+	column Column1
+		dataType: string
+		lineageTag: 360d264b-4667-4556-a169-c88c3ca89e8d
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 9c5dc5ec-afe7-4c6b-a535-f9db9a7cd9b0
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Code of the Statistical Indicator (Methodological notes)' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Index_of_prices_and_tariffs_for_consumer_goods_and_services_by_region.xlsx"), null, false),
+				  #"Methodological notes_sheet" = Source{[Item = "Methodological notes", Kind = "Sheet"]}[Data],
+				  #"Filter null and whitespace" = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+				  #"Removed other columns" = Table.SelectColumns(#"Methodological notes_sheet", List.Select(Table.ColumnNames(#"Methodological notes_sheet"), each try not List.IsEmpty(#"Filter null and whitespace"(Table.Column(#"Methodological notes_sheet", _))) otherwise true)),
+				  #"Removed blank rows" = Table.SelectRows(#"Removed other columns", each not List.IsEmpty(#"Filter null and whitespace"(Record.FieldValues(_))))
+				in
+				  #"Removed blank rows"
+

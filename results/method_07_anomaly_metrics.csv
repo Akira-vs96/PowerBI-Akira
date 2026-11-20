@@ -1,0 +1,4 @@
+﻿method,anomaly_count
+Z-score,9
+IQR,60
+Isolation Forest,20

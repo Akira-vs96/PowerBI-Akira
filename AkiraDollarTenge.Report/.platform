@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "AkiraDollarTenge"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a9482eb2-f2c6-4083-a19c-c9fcc6faa58a"
+  }
+}

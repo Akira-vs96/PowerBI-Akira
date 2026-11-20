@@ -1,0 +1,294 @@
+table 'CPI (2)'
+	lineageTag: df576435-0069-4b77-8b6b-86ac44bc3feb
+
+	column 'Price index for consumer goods and services'
+		dataType: string
+		lineageTag: 02ca1221-bff9-41e3-97d9-f3b076d4536c
+		summarizeBy: none
+		sourceColumn: Price index for consumer goods and services
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 3228d3f1-8356-4e9d-a1ac-8338aae2cfb5
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 6218a46d-26dd-4807-b98a-42079e227514
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: f525a72b-697f-4968-b612-b62c6aad2793
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: d1f55642-0579-47c0-adfe-fa98d4cd9a93
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 7ac35732-4a90-48b7-8aa3-d16aa1a11c5d
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 0eebe5fe-2a44-4723-8596-89437121b40d
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: bf78d7ad-c7e7-4208-83b4-477611bc00e4
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 0150d560-083c-4994-a58f-11bcddb2ef03
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 8e5fba26-355c-40f6-bc0f-b7666b698715
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 1cc378f7-ca45-481e-bbe8-26b06009c0b8
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: a186ee65-176b-48db-bd5c-0fd4e1c9976e
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 06b86003-515d-4389-a91b-b5f08b75c1ae
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 56a51ee9-7324-4ac3-ab5b-a042d7cd6334
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: ee648a3f-d51f-4119-8ed3-5e83430e2224
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: 9930c996-17ad-46d6-a0bc-9c5a2a1948f0
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column17
+		dataType: string
+		lineageTag: bc4acdf9-2e91-44de-8f10-90b603346dd8
+		summarizeBy: none
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column18
+		dataType: string
+		lineageTag: ed5e32b7-b22d-43eb-bb49-5a6e9a065e1e
+		summarizeBy: none
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column19
+		dataType: string
+		lineageTag: 98e137bc-22b2-42d5-9142-744c8ec88c8b
+		summarizeBy: none
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column20
+		dataType: string
+		lineageTag: 7c7a3843-bc32-431c-8a6a-d033de422f89
+		summarizeBy: none
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column21
+		dataType: string
+		lineageTag: e5fbb44b-d18c-4fbf-81fe-eec027d1ce80
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column22
+		dataType: string
+		lineageTag: baed7ced-b35d-4ffb-b57f-4ea604c0b033
+		summarizeBy: none
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: bd5599b9-ab17-4de8-8cc7-705e4f3bf8ad
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column24
+		dataType: string
+		lineageTag: 6c25750f-6bb2-40a0-862e-9a361f81f915
+		summarizeBy: none
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column25
+		dataType: string
+		lineageTag: 39d69fd1-1975-4fef-9d99-54501b7c8796
+		summarizeBy: none
+		sourceColumn: Column25
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column26
+		dataType: string
+		lineageTag: e128c204-c571-4a3f-9c8b-45b8c4ef7fa5
+		summarizeBy: none
+		sourceColumn: Column26
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column27
+		dataType: string
+		lineageTag: 3620f7bc-0c4e-4a8b-824e-379fbf7e0816
+		summarizeBy: none
+		sourceColumn: Column27
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column28
+		dataType: string
+		lineageTag: 0d97b167-05a2-49e6-b46c-c7349c5f9131
+		summarizeBy: none
+		sourceColumn: Column28
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column29
+		dataType: string
+		lineageTag: c31900ac-5984-4ece-8173-eb7e4702b630
+		summarizeBy: none
+		sourceColumn: Column29
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column30
+		dataType: string
+		lineageTag: 5f576014-b5ed-4ee9-8cf1-dee234dd3b75
+		summarizeBy: none
+		sourceColumn: Column30
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column31
+		dataType: double
+		lineageTag: c31c4517-a33e-4450-809b-84d24a83718a
+		summarizeBy: sum
+		sourceColumn: Column31
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column32
+		dataType: double
+		lineageTag: fdf7bbf3-7cab-42d3-8723-6568251d9dc7
+		summarizeBy: sum
+		sourceColumn: Column32
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column33
+		dataType: double
+		lineageTag: 5fe57a47-5b9a-4bf1-8c8f-7a42cc7552d8
+		summarizeBy: sum
+		sourceColumn: Column33
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column34
+		dataType: double
+		lineageTag: a65822b2-17aa-4893-b10e-cf1e734b5ff0
+		summarizeBy: sum
+		sourceColumn: Column34
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'CPI (2)' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Index_of_prices_and_tariffs_for_consumer_goods_and_services_by_region.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "CPI", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Price index for consumer goods and services", type text}, {"Column31", type number}, {"Column32", type number}, {"Column33", type number}, {"Column34", type number}})
+				in
+				  #"Changed column type"
+

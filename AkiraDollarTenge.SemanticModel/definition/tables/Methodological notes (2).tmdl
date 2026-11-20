@@ -1,0 +1,117 @@
+table 'Methodological notes (2)'
+	lineageTag: bc8400ac-691a-46b5-b6f7-f23267362962
+
+	column Column1
+		dataType: string
+		lineageTag: b1da9de8-794a-4f9d-b643-2d8945f1340f
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: c651b173-73b5-4ba5-85f9-84e7b5f6fa96
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: e6e0d35d-f0a8-4270-8471-db43c01ac67e
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: b9001f28-fede-46ab-ba0a-d29188fce5b3
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: de25db58-6539-4210-acd4-5a0c0d9b2934
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 2c7b3fa7-f8d4-4e8c-ba09-856ddda7ed17
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: c31edee7-0236-49ba-9cb3-3e183aa18144
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 1f47bfc6-c3ac-435f-80c4-d9fc4fff1c80
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 31646eca-1bad-4bf3-ad49-b10e7ddae6bc
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: ba01a81f-ef0c-4c54-8042-36af802e3a6b
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 96b67db8-d261-43a3-b3ed-a3a94f3352cf
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 93cfe27d-4d42-469b-9c17-d46695aceeaf
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 72bc2d0f-4e0d-4096-9f3d-56c07f2d946e
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Methodological notes (2)' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Index_of_prices_and_tariffs_for_consumer_goods_and_services_by_region.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Methodological notes", Kind = "Sheet"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"Column1", type text}})
+				in
+				  #"Changed column type"
+

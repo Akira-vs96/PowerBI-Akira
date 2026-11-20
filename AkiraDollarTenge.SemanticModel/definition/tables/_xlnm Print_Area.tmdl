@@ -1,0 +1,282 @@
+table '_xlnm Print_Area'
+	lineageTag: ce2e8a01-cabb-4492-9487-5c08d5462736
+
+	column 'Index of prices and tariffs for consumer goods and services'
+		dataType: string
+		lineageTag: 10c20f96-b207-4004-8682-7e4fb4019f14
+		summarizeBy: none
+		sourceColumn: Index of prices and tariffs for consumer goods and services
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: double
+		lineageTag: 0019003c-4f5a-4a78-92d0-67716408a5a3
+		summarizeBy: sum
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column3
+		dataType: double
+		lineageTag: 5dd6909e-35f9-45b5-bb7c-915f9833166e
+		summarizeBy: sum
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column4
+		dataType: double
+		lineageTag: 67197129-121c-4460-a826-a3e43058e7c2
+		summarizeBy: sum
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column5
+		dataType: double
+		lineageTag: 0b26607d-45ef-4113-92b5-cb468df0d240
+		summarizeBy: sum
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column6
+		dataType: double
+		lineageTag: f9b9f81b-fe73-4790-8e54-86abe622990c
+		summarizeBy: sum
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column7
+		dataType: double
+		lineageTag: 96fd0005-c7eb-47d3-8dd2-aec32fcb0119
+		summarizeBy: sum
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column8
+		dataType: double
+		lineageTag: be6fce24-7105-47eb-a095-6c4dcd4ee663
+		summarizeBy: sum
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column9
+		dataType: double
+		lineageTag: e5dfa4ca-60db-45ae-a6cd-f3b880e19328
+		summarizeBy: sum
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column10
+		dataType: double
+		lineageTag: f957f985-7b13-438f-aecf-d48e39c6dd40
+		summarizeBy: sum
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column11
+		dataType: double
+		lineageTag: 4d3ba7a9-277c-453e-8123-b13311f5fb36
+		summarizeBy: sum
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column12
+		dataType: double
+		lineageTag: 2eaf3427-98da-41cb-ac14-1949238e1229
+		summarizeBy: sum
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column13
+		dataType: double
+		lineageTag: 3f9e7295-12c6-4050-8446-1db0632a4e86
+		summarizeBy: sum
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column14
+		dataType: double
+		lineageTag: 7ff32d64-c069-47f7-8967-4f503931d10e
+		summarizeBy: sum
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column15
+		dataType: double
+		lineageTag: 2cadc201-8e9b-4fb3-a51b-66924f5ccb8e
+		summarizeBy: sum
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column16
+		dataType: double
+		lineageTag: b4d81726-b839-4290-aa1e-3e2b8c8c751a
+		summarizeBy: sum
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column17
+		dataType: double
+		lineageTag: 4891b837-4eb3-4e1e-93b8-c7e3ed73bf00
+		summarizeBy: sum
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column18
+		dataType: double
+		lineageTag: fcbcd7d1-7fdb-4095-aa7a-23af55ce055b
+		summarizeBy: sum
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column19
+		dataType: double
+		lineageTag: 16353911-212f-4610-9b85-a340e734d109
+		summarizeBy: sum
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column20
+		dataType: double
+		lineageTag: 3923d64c-7e78-4f33-a7df-f4b74c4afb4c
+		summarizeBy: sum
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column21
+		dataType: double
+		lineageTag: 1b17a08b-24f2-4eab-9972-f053817cb481
+		summarizeBy: sum
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column22
+		dataType: double
+		lineageTag: 5b7e8c47-cce2-41c5-9cfc-0b67b464c33b
+		summarizeBy: sum
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column23
+		dataType: double
+		lineageTag: af54b116-8e72-4810-b0ec-651d58772d6c
+		summarizeBy: sum
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column24
+		dataType: double
+		lineageTag: c317ddc6-06d0-4300-afbc-d82968040ec4
+		summarizeBy: sum
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column25
+		dataType: double
+		lineageTag: 7732119c-1fc9-4571-aa4d-6dc95cfee0da
+		summarizeBy: sum
+		sourceColumn: Column25
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column26
+		dataType: double
+		lineageTag: 6e5e0fbd-de19-48be-8c30-8c4b95fd04df
+		summarizeBy: sum
+		sourceColumn: Column26
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column27
+		dataType: double
+		lineageTag: 6b3bd17c-f310-441e-87f9-4f516d7187e9
+		summarizeBy: sum
+		sourceColumn: Column27
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition '_xlnm Print_Area' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\anura\Downloads\AkiraDollarTenge\Price_index_for_the_main_groups_of_consumer_goods_and_services_.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "eng!_xlnm.Print_Area", Kind = "DefinedName"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Index of prices and tariffs for consumer goods and services", type text}, {"Column2", type number}, {"Column3", type number}, {"Column4", type number}, {"Column5", type number}, {"Column6", type number}, {"Column7", type number}, {"Column8", type number}, {"Column9", type number}, {"Column10", type number}, {"Column11", type number}, {"Column12", type number}, {"Column13", type number}, {"Column14", type number}, {"Column15", type number}, {"Column16", type number}, {"Column17", type number}, {"Column18", type number}, {"Column19", type number}, {"Column20", type number}, {"Column21", type number}, {"Column22", type number}, {"Column23", type number}, {"Column24", type number}, {"Column25", type number}, {"Column26", type number}, {"Column27", type number}})
+				in
+				  #"Changed column type"
+
